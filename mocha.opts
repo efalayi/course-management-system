@@ -1,3 +1,4 @@
 --require @babel/register
 --recursive ./server/**/*.test.js
---reporter spec
+--reporter mocha-junit-reporter
+--reporter-options mochaFile=reports/mocha/test-results.xml

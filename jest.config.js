@@ -2,6 +2,7 @@
 const jestConfig = {
   bail: true,
   verbose: true,
+  collectCoverageFrom: ['**/*.{js,jsx}', '!**/node_modules/**'],
   globals: {
     NODE_ENV: 'test',
   },
@@ -9,6 +10,7 @@ const jestConfig = {
   moduleNameMapper: {
     '\\.(css|scss|less)$': '<rootDir>/config/jest/styleMock.js',
   },
+  reporters: ['default', 'jest-junit'],
   roots: ['<rootDir>/client/'],
   testEnvironment: 'node',
   transform: {
