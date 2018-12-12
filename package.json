@@ -1,0 +1,9 @@
+{
+  "name": "course-management-system",
+  "version": "1.0.0",
+  "description": "A web application for course management",
+  "main": "server.js",
+  "repository": "git@github.com:efalayi/course-management-system.git",
+  "author": "Esther Falayi <esther.falayi@andela.com>",
+  "license": "MIT"
+}
