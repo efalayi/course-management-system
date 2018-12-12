@@ -1,8 +1,11 @@
+import dotenv from 'dotenv'
 import express from 'express'
 import appRouter from './routes'
 import printMessage from '../tools/printMessage'
 
-const PORT = 3000
+dotenv.config()
+
+const PORT = process.env.PORT || 3000
 const app = express()
 
 app.use(appRouter)
