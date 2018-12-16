@@ -7,7 +7,16 @@ const babelConfig = {
         },
       },
     ],
+    [
+      '@babel/preset-react',
+      {
+        development: process.env.BABEL_ENV === 'development',
+      },
+    ],
   ],
+  ignore: [
+    'node_modules',
+  ]
 }
 
 module.exports = babelConfig
